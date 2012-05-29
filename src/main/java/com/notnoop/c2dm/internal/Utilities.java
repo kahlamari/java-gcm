@@ -79,7 +79,7 @@ public final class Utilities {
         }
         
         for (Map.Entry<String, ?> data: notify.getData().entrySet()) {
-        	pairs.add(new BasicNameValuePair(data.getKey(), data.getValue().toString()));
+        	pairs.add(new BasicNameValuePair("data." + data.getKey(), data.getValue().toString()));
         }
 
         return pairs;
