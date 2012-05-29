@@ -77,9 +77,9 @@ public final class Utilities {
         if (notify.isDelayWhileIdle()) {
             pairs.add(new BasicNameValuePair("delay_while_idle", "1"));
         }
-
-        for (Map.Entry<String, String> data: notify.getData()) {
-            pairs.add(new BasicNameValuePair(data.getKey(), data.getValue()));
+        
+        for (Map.Entry<String, ?> data: notify.getData().entrySet()) {
+        	pairs.add(new BasicNameValuePair(data.getKey(), data.getValue().toString()));
         }
 
         return pairs;
