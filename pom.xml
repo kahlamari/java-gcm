@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.notnoop.c2dm</groupId>
-  <artifactId>c2dm</artifactId>
-  <name>Java Google Push Notification Service Library</name>
+  <groupId>net.vincent-kahl.gcm</groupId>
+  <artifactId>gcm</artifactId>
+  <name>Java Google Cloud Messaging for Android Library</name>
   <version>0.0.1-SNAPSHOT</version>
 
     <!-- Inherit the Sonatype OSS deployment configuration -->
@@ -15,9 +15,9 @@
     -->
 
     <scm>
-        <connection>scm:git:git://github.com/notnoop/java-c2dm.git</connection>
-        <developerConnection>scm:git:git@github.com:notnoop/java-c2dm.git</developerConnection>
-        <url>http://github.com/notnoop/java-c2dm</url>
+        <connection>scm:git:git://github.com/radikahl/java-gcm.git</connection>
+        <developerConnection>scm:git:git@github.com:radikahl/java-gcm.git</developerConnection>
+        <url>http://github.com/radikahl/java-gcm</url>
     </scm>
 
     <properties>
@@ -167,7 +167,7 @@
     </dependencies>
 
     <!-- Site Generation -->
-    <url>http://notnoop.github.com/java-c2dm</url>
+    <url>http://radikahl.github.com/java-gcm</url>
     <description>
         Library to send Google Push Notification.
     </description>
@@ -187,7 +187,7 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.7</version>
           <configuration>
-              <excludePackageNames>com.notnoop.c2dm.internal</excludePackageNames>
+              <excludePackageNames>com.notnoop.gcm.internal</excludePackageNames>
           </configuration>
         </plugin>
         <plugin>
@@ -219,13 +219,17 @@
 
     <issueManagement>
         <system>Github</system>
-        <url>http://github.com/notnoop/java-c2dm/issues</url>
+        <url>http://github.com/radikahl/java-gcm/issues</url>
     </issueManagement>
 
     <developers>
         <developer>
             <id>notnoop</id>
             <name>Mahmood Ali</name>
+        </developer>
+        <developer>
+          <id>radikahl</id>
+          <name>Vincent Kahl</name>
         </developer>
     </developers>
 
